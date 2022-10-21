@@ -15,7 +15,7 @@ print("Tu nombre es:",x)
 #Actividad 4:
 print("Actividad 4:")
 n=input("Cual es su edad:")
-print("Tu edad es:", int(n))
+print("El número elegido es:", int(n))
 #Actividad 5:
 print("Actividad 5:")
 r=float(input("Radio de la circumferencia:"))
@@ -28,11 +28,11 @@ fname = input("Introduzca su nombre:")
 print("Su nombre completo es:",fname + " " + lname)
 #Actividad 7:
 print("Actividad 7:")
-N1 = float(input("Primera nota:"))
-N2 = float(input("Segunda nota:"))
-N3 = float(input("Tercera nota:"))
-N4 = float(input("Cuarta nota:"))
-Ntotal = round((N1 + N2 + N3 + N4) / 4)
+N1 = int(input("Primera nota:"))
+N2 = int(input("Segunda nota:"))
+N3 = int(input("Tercera nota:"))
+N4 = int(input("Cuarta nota:"))
+Ntotal = (N1 + N2 + N3 + N4) / 4
 print("El promedio es:",Ntotal)
 #Actividad 8:
 print("Actividad 8:")
@@ -41,8 +41,8 @@ numT = len(Texto)
 print("El texto que has escrita contiene",numT, "carácteres.")
 #Actividad 9:
 print("Actividad 9:")
-c1 = float(input("Primera nota:"))
-c2 = float(input("Segunda nota:"))
+c1 = int(input("Primera nota:"))
+c2 = int(input("Segunda nota:"))
 nl = int(input("Nota de laboratorio:"))
 nf = 60
 c3 = (3*(nf-nl*0.3)/0.7)-c2-c1
@@ -72,18 +72,18 @@ elif imc >= 40.00:
     print("Trata de rodar como en Dark Souls.")
 #Actividad 11:
 print("Actividad 11:")
-salbr = float(input("Introduzca su salario en bruto (?):"))
+salbr = float(input("Introduzca su salario en bruto (€):"))
 ts1 = salbr - ((salbr / 100) * 5)
 ts2 = salbr - ((salbr / 100) * 10)
 ts3 = salbr - ((salbr / 100) * 12)
 if salbr < 1000.00:
-    print("Tu impuesto será del 0% por lo tanto su salario neto será de",round(salbr,2),"?")
+    print("Tu impuesto será del 0% por lo tanto su salario neto será de",round(salbr,2),"€")
 elif salbr >= 1000.00 and salbr < 2000.00:
-    print("Tu impuesto será del 5% por lo tanto su salario neto será de",round(ts1,2),"?")
+    print("Tu impuesto será del 5% por lo tanto su salario neto será de",round(ts1,2),"€")
 elif salbr >= 2000.00 and salbr < 4000.00:
-    print("Tu impuesto será del 10% por lo tanto su salario neto será de",round(ts2,2),"?")
+    print("Tu impuesto será del 10% por lo tanto su salario neto será de",round(ts2,2),"€")
 elif salbr >= 4000.00:
-    print("Tu impuesto será del 12% por lo tanto su salario neto será de",round(ts3,2),"?")
+    print("Tu impuesto será del 12% por lo tanto su salario neto será de",round(ts3,2),"€")
 #Actividad 12:
 print("Actividad 12:")
 x = int(input("Introduzca un numero:"))
@@ -147,9 +147,109 @@ print("Activitat 17:")
 x = int(input("Introduzca un numero:"))
 y = int(input("Introduzca otro numero:"))
 if x > y:
-    print(x,">",y)
+    print("Menor:",x,">","Mayor:",y)
 elif x < y:
-    print(y,">",x)
+    print("Menor:",y,">","Mayor:",x)
 elif x == y:
     print(x,"=",y)
-
+#Actividad 18:
+print("Actividad 18:")
+x = int(input("Introduzca un numero:"))
+y = int(input("Introduzca otro numero:"))
+mul = 0
+div = 0
+if y == 0:
+    print("La división entre",x,"y",y,"no es posible.")
+elif x and y > 0:
+    if x == 0:
+        print("El resultado de una división de 0 entre cualquier número, siempre es 0.")
+        print("Por lo tanto es múltiple.")
+    elif x >= y:
+        mul = x % y
+        div = x / y
+        if mul == 0:
+            print(float(div))
+            print(x,"és múltiple de",y)
+        else:
+            print(float(div))
+            print(x,"no és múltiple de",y)
+    elif y >= x:
+        mul = y % x
+        div = y / x
+        if mul == 0:
+            print(float(div))
+            print(y,"és múltiple de",x)
+        else:
+            print(float(div))
+            print(y,"no és múltiple de",x)
+else:
+    if x == 0:
+        print("El resultado de una división de 0 entre cualquier número, siempre es 0.")
+        print("Por lo tanto es múltiple.")
+    elif x >= y:
+        mul = y % x
+        div = y / x
+        if mul == 0:
+            print(float(div))
+            print(x,"és múltiple de",y)
+        else:
+            print(float(div))
+            print(x,"no és múltiple de",y)
+    elif y >= x:
+        mul = x % y
+        div = x / y
+        if mul == 0:
+            print(float(div))
+            print(y,"és múltiple de",x)
+        else:
+            print(float(div))
+            print(y,"no és múltiple de",x)
+#Actividad 19:
+print("Actividad 19:")
+x = int(input("Introduzca el primer número:"))
+y = int(input("Introduzca el segundo número:"))
+w = int(input("Introduzca el tercer número:"))
+if x == y and x == w:
+    print("Los 3 números son iguales.")
+elif x == y:
+    print(x,"y",y,"son iguales.")
+elif x == w:
+    print(x,"y",w,"son iguales.")
+elif y == w:
+    print(y,"y",w,"son iguales.")
+else:
+    print("Los 3 números son distintos.")
+#Actividad 20:
+print("Actividad 20:")
+x = int(input("Introduce un año y te diré si es biciesto o no:"))
+calc = x % 4
+if calc == 0:
+    print("El año",x,"es un número biciesto porque es multiple de 4.")
+else:
+    print("El año",x,"no es un número biciesto.")
+#Actividad 21:
+print("Actividad 21:")
+x = input(
+"""-------------------------------------------
+Escoje una figura geometrica para calcular su area: 
+-Triangulo (T)
+-Circulo (C)
+-------------------------------------------
+Elige 'C' o 'T': """)
+if x == "C":
+    r = float(input("Introduce el radio del circulo:"))
+    a = pi * r**2
+    print("La area del circulo es:",a)
+elif x == "T":
+    b = float(input("Introduce la base del triangulo:"))
+    alt =  float(input("Introduce la altura del triangulo:"))
+    a = (b * alt) / 2
+    print("La area del triangulo es:",float(a,2))
+#Actividad 22:
+print("Actividad 22:")
+cm = float(input("Introduce la cantidad de centímetros:"))
+if cm <= 100:
+    print("Tu distancia es",cm,"centímetros:")
+if cm >= 100:
+    m = cm / 100
+    print("Tu distancia es",m,"metros.")
