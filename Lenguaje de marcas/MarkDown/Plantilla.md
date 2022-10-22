@@ -156,6 +156,6 @@ console.log(foo(5));
 ---
 ### Imagen con título:
     ![GrassBlock](IMG/GrassNew.webp "Bloque de tierra con hierba")
-![GrassBlock](/IMG/GrassNew.webp "Bloque de tierra con hierba")
+![GrassBlock](IMG/GrassNew.webp "Bloque de tierra con hierba")
 ---
 ### ***Marc Albert Seguí Olmos***
