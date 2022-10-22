@@ -33,6 +33,19 @@
 
 ### **5. ¿Describe brevemente los problemas legales que tuvo Aaron Swartz?**
 
-#### En julio de 2011, Swartz fué acusado de heber utilizado un script para descargar documentación de JSTOR desde las oficinas del MIT en el 2010. En el 2012, la fiscalía federal lo condena a 50 años de prisión junto a una multa de 1 millón de dólares. Durante la negociación de la pena, la fiscalía ofreció una sentencia de 6 meses en una prisión de baja seguridad si Aaron se declaraba culpable. Aaron y su abogado rechazaron el acuerdo, prefiriendo un juicio en el que la fiscalía sería forzada a justificar la persecución. Mientras el encarcelamiento estaba siendo tratado, 
++ En julio de 2011, Swartz fué acusado de heber utilizado un script para descargar documentación de JSTOR desde las oficinas del MIT en el 2010.
 
++ En el 2012, la fiscalía federal lo condena a 50 años de prisión junto a una multa de 1 millón de dólares. Durante la negociación de la pena, la fiscalía ofreció una sentencia de 6 meses en una prisión de baja seguridad si Aaron se declaraba culpable. 
+
++ Aaron y su abogado rechazaron el acuerdo, prefiriendo un juicio en el que la fiscalía sería forzada a justificar la persecución. 
+
++ Mientras el encarcelamiento estaba siendo tratado, Aaron Swartz se suicidó en su apartamento.
+
+---
+
+### **Conclusión:**
+
+#### En definitiva, Aaron Swartz fué una persona demasiado importante en el mundo del libre acceso y programador magnífico que hizo mucho para que el internet que nosotros usamos de hoy en dia sea una herramienta no solo eficiente sino la más eficiente y la que más nos ha unido como personas. No tengo mucho que decir al respecto sobre este chico más que en paz descanse.
+
+#### El tema de que la fiscalía en los Estados Unidos sea una de las más antiguas y corruptas dentro de los paises primer-mundistas hace que pensar en el desarrollo de según que personas que tienen la capacidad de destacar y dejar algo bonito en el mundo.
 
