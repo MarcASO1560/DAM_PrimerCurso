@@ -1,2 +1,2 @@
 # DAM
-Aquí hay ejercicios de python y java de lo mas sencillo a cosas un poquitiín mas avanzadas.
+### Aqui se pueden encontrar todos los documentos importantes que utilizo en clase.
