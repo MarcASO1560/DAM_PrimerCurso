@@ -26,3 +26,13 @@
 ---
 
 ### **4. ¿En qué empresas trabajó Aaron Swartz?**
+
+#### Aaron Swartz trabajó en [W3C](https://www.w3.org/), trabajó en la fundación [Avaaz](https://secure.avaaz.org/page/es/) y entremedio cofundó [Rootstrikers](https://www.rootstrikers.org/#!/), además de crear el Markdown, Reddit y Open Library. También fué escritor, con libros como Guerilla Open Acces. Entre otras mcuhas otras cosas relevantes que hizo.
+
+---
+
+### **5. ¿Describe brevemente los problemas legales que tuvo Aaron Swartz?**
+
+#### En julio de 2011, Swartz fué acusado de heber utilizado un script para descargar documentación de JSTOR desde las oficinas del MIT en el 2010. En el 2012, la fiscalía federal lo condena a 50 años de prisión junto a una multa de 1 millón de dólares. Durante la negociación de la pena, la fiscalía ofreció una sentencia de 6 meses en una prisión de baja seguridad si Aaron se declaraba culpable. Aaron y su abogado rechazaron el acuerdo, prefiriendo un juicio en el que la fiscalía sería forzada a justificar la persecución. Mientras el encarcelamiento estaba siendo tratado, 
+
+
