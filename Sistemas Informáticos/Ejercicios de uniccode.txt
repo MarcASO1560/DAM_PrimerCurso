@@ -1,0 +1,112 @@
+5: Codifica los siguientes caracteres:
+a) Ñ con código U+00D1.
+	0000 0000 1101 0001
+	110xxxxx 10xxxxxx
+	11000011 10010001
+b) a con código U+0061 y la A con código U+0041. Observa las diferencias.
+	a = 0000 0000 0110 0001
+	    0xxxxxxx
+	    01100001
+	A = 0000 0000 0100 0001
+	    0xxxxxxx
+	    01000001
+c) ç y Ç. Observa la diferencia entre mayúscula y minúscula.
+	ç = U+00E7
+	    0000 0000 1110 0111
+	    110xxxxx 10xxxxxx
+	    11000011 10100111
+	Ç = U+00C7
+	    0000 0000 1100 0111
+	    110xxxxx 10xxxxxx
+	    11000011 10000111
+6: Encuentra errores de UTF-8:
+	41 = 01000001
+	6F = 01101111
+	E7 84 A6 = 11100111 10000100 10100110
+	70 = 01110000 
+	C6 71 = 11000110 01110001 Not correct.
+	20 = 00100000
+	84 = 10000100 Not correct.
+	61 = 01100001
+7: Codifica el emoji:
+	U+1F618
+	0001 1111 0110 0001 1000
+	11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+	11110000 10011111 10011000 10011000
+8: Codifica la frase:
+	M = U+004D
+	a = U+0061
+	ñ = U+00F1
+	a = U+0061
+	n = U+006E
+	a = U+0061
+	_ = U+0020
+	e = U+0065
+	s = U+0073
+	_ = U+0020
+	t = U+0074
+	u = U+0075
+	_ = U+0020
+	c = U+0063
+	u = U+0075
+	m = U+006D
+	p = U+0070
+	l = U+006C
+	e = U+0065
+	a = U+0061
+	ñ = U+00F1
+	o = U+006F
+	s = U+0073
+	_ = U+0020
+	party pooper = U+1F389
+	, = U+002C
+	_ = U+0020
+	t = U+0074
+	e = U+0065
+	n = U+006E
+	e = U+0065
+	m = U+006D
+	o = U+006F
+	s = U+0073
+	_ = U+0020
+	u = U+0075
+	n = U+006E
+	a = U+0061
+	_ = U+0020
+	s = U+0073
+	o = U+006F
+	r = U+0072
+	p = U+0070
+	r = U+0072
+	e = U+0065
+	s = U+0073
+	a = U+0061
+	_ = U+0020
+	p = U+0070
+	r = U+0072
+	e = U+0065
+	p = U+0070
+	a = U+0061
+	r = U+0072
+	a = U+0061
+	d = U+0064
+	a = U+0061
+	_ = U+0020
+	wrapped present = U+1F381
+	_ = U+000A
+	¡ = U+00A1
+	T = U+0054
+	e = U+0065
+	_ = U+0020
+	e = U+0065
+	n = U+006E
+	c = U+0063
+	a = U+0061
+	n = U+006E
+	t = U+0074
+	a = U+0061
+	r = U+0072
+	á = U+00E1
+	! = U+0021
+	_ = U+0020
+	smiling face with sunglasses = U+1F60E
