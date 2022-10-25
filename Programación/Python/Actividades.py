@@ -248,8 +248,61 @@ elif x == "T":
 #Actividad 22:
 print("Actividad 22:")
 cm = float(input("Introduce la cantidad de centímetros:"))
-if cm <= 100:
+if cm < 100:
     print("Tu distancia es",cm,"centímetros:")
-if cm >= 100:
+elif cm >= 100 and cm < 100000:
     m = cm / 100
-    print("Tu distancia es",m,"metros.")
+    cm1 = m - trunc(m)
+    print("Tu distancia es",trunc(m),"metros y",round(cm1*100),"centímetros.")
+elif cm >= 100000:
+    km = cm / 100000
+    m1 = (km - trunc(km))*1000
+    cm2 = (m1 - trunc(m1))*100
+    print("Tu distancia es",trunc(km),"kilómetros",round(m1),"metros y",round(cm2),"centímetros.")
+#Actividad 23:
+print("Actividad 23:")
+x = float(input("Escribe un número, cuando escribas el número 0, saldrá del bucle:"))
+y = [x]
+while x != 0:
+    x = float(input("Escribe otro número:"))
+    if x == 0:
+        print("Los números que has escrito són:",y)
+        break
+    else:
+        y.append(x)
+#Actividad 24:
+print("Activiad 24:")
+x = float(input("Escribe una nota entre 0 y 10:"))
+y = [x]
+while x >= 0 or x <= 10:
+    x = float(input("Escribe otra nota:"))
+    if x < 0 or x > 10:
+        print("Las notas que has escrito son:",y)
+        break
+    else:
+        y.append(x)
+#Actividad 25:
+print("Actividad 25:")
+x1 = float(input("Introduce un número:"))
+x2 = 0
+y = [x1]
+while x1 >= x2:
+    x2 = x1
+    x1 = float(input("Escribe otro número mayor que el anterior:"))
+    if x1 < x2:
+        print("Los números escritos son:",y)
+    else:
+        y.append(x1)
+#Actividad 26:
+print("Actividad 26:")
+min = float(input("Introduce un número:"))
+max = float(input("Introduce otro número:"))
+y = [min]
+while min >= max:
+    min += 1
+    if min == max:
+        y.append(max)
+        print("Los numeros situados entre los escritos son los siguientes:",y)
+        break
+    else:
+        y.append(min)
