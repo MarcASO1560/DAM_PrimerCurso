@@ -297,7 +297,7 @@ while x1 >= x2:
 print("Actividad 26:")
 while True:
     min = float(input("Introduce un número:"))
-    max = float(input("Introduce un número anterior que el anterior:"))
+    max = float(input("Introduce un número mayor que el anterior:"))
     y = []
     if min > max:
         print(min,"es mayor que",max,"Por lo tanto vuelve a empezar.")
@@ -311,6 +311,99 @@ while True:
                 break
         print("Los números situados entre",min,"y",max,"son:",y)
         break
+#Actividad 27:
+print("Actividad 27:")
+lim = float(input("Introduce un número límite:"))
+y = []
+while True:
+    z = 0
+    while True:
+        x = float(input("Escribe un valor menor al límite:"))
+        if z >= lim:
+            print("El limite a superar es",lim,". La lista creada es:",y)
+            break
+        elif z < lim:
+            y.append(x)
+            z += x
+    break
+#Actividad 28:
+print("Actividad 28:")
+while True:
+    min = int(input("Introduce un número mínimo:"))
+    max = int(input("Introduce un número máximo:"))
+    if min > max:
+        print(min,"es mayor que",max,"Por lo tanto vuelve a empezar.")
+    if max >= min:
+        x = random.randrange(min,max)
+        c = 0
+        print("Empieza el juego. Adivina el numero randomizado entre",min,"y",max,":")
+        while True:
+            y = float(input("Introduce un número:"))
+            if y < x:
+                print("¡Demasiado pequeño!")
+                c += 1
+            elif y > x:
+                print("¡Demasiado grande!")
+                c += 1
+            else:
+                if c == 0:
+                    print("¡Acertaste a la primera!")
+                    break
+                else:
+                    print("¡Acertaste! Te ha costado",c,"intentos.")
+                    break
+        break
+#Actividad 29:
+print("Actividad 29:")
+x = list(range(0,10))
+print(x)
+x = list(range(4,11))
+print(x)
+x = list(range(-6,1))
+print(x)
+x = list(range(-56,-49))
+print(x)
+x = list(range(1,18,2))
+print(x)             
+x = list(range(-6,11,2))
+print(x)
+x = list(range(100,1001,100))
+print(x)
+x = list(range(10,3,-1))
+print(x)
+x = list(range(-50,-57,-1))
+print(x)
+x = list(range(17,0,-2))
+print(x)
+x = list(range(1000,99,-100))
+print(x)
+#Actividad 30:
+print("Actividad 30:")
+while True:
+    x = float(input("Introduce un número positivo:"))
+    if x < 0:
+        print(x,"no es un número positivo:")
+    else:
+        y = list(range(0,int(x + 1),1))
+        print(y)
+        y = list(range(int(x),-1,-1))
+        print(y) 
+        y = list(range(1,int(x),1))
+        print(y)
+        y = list(range(int(x - 1),0,-1))
+        print(y)
+        y = list(range(0,int(x + 1),1)) + list(range(int(x - 1),-1,-1))
+        print(y)
+        break
+#Actividad 31:
+print("Actividad 31:")
+x = float(input("Introduce un número:"))
+if x > 0:
+    y = list(range(0,int(x+1),1))
+    print("El resultado es:",y)
+elif x < 0:
+    y = list(range(0,int(x-1),-1))
+    print("El resultado es:",y)
 
 
 
