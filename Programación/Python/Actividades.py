@@ -468,6 +468,17 @@ if x%2==0 or y%2==0:
 else:
     z = list(range(int(x+1),int(y),2))
     print(z)
+#Actividad 37:
+print("Actividad 37:")
+x = float(input("Dime el valor inicial:"))
+y = float(input("Dime el valor final:"))
+z = float(input("De que valor quieres los múltiplos:"))
+w = list(range(int(x),int(y),int(z)))
+c = len(w)
+print(w)
+print("Entre",int(x),"y",int(y),"hay",c,"múltiplos de",int(z),".")
+#Actividad 38:
+print("Actividad 38:")
 
 
 
