@@ -1,5 +1,6 @@
 import sys
-from math import pi
+from math import pi,trunc
+import random
 #Actividad 1:
 print("Actividad 1:")
 print("La versión actual de python es:",sys.version)
@@ -404,6 +405,71 @@ if x > 0:
 elif x < 0:
     y = list(range(0,int(x-1),-1))
     print("El resultado es:",y)
+#Actividad 32:
+print("Actividad 32:")
+while True:
+    min = float(input("Introduce el primer número:"))
+    max = float(input("Introduce un número mayor que el primero:"))
+    if min > max:
+        print(min,"es mayor que",max,". Por lo tanto vuelve a empezar.")
+    else:
+        y = list(range(int(min),int(max + 1),1))
+        print(y)
+        y = list(range(int(max - 1),int(min - 1),-1))
+        print(y)
+        y = list(range(int(min + 1),int(max + 2),1))
+        print(y)
+        y = list(range(int(max - 1),int(min),-1))
+        print(y)
+        y = list(range(int(min),int(max + 1),1)) + list(range(int(max - 1),int(min - 1),-1))
+        print(y)
+        break
+#Actividad 33:
+print("Actividad 33:")
+x = float(input("Escribe un número inicial:"))
+y = float(input("Escribe un número final:"))
+if x > y:
+    w = list(range(int(y),int(x),-1))
+    print(w)
+if x < y:
+    w = list(range(int(x),int(y),1))
+    print(w)
+#Actividad 34:
+print("Actividad 34:")
+x = float(input("Escribe un número inicial:"))
+y = float(input("Escribe un número final:"))
+if x > y:
+    w = list(range(int(y + 1),int(x),1))
+    print(w)
+if x < y:
+    w = list(range(int(x + 1),int(y),1))
+    print(w)
+#Actividad 35:
+print("Actividad 35:")
+x = float(input("Introduce un valor inicial:"))
+y = float(input("Introduce cuantos valores quieres:"))
+z = x + y
+w = list(range(int(x),int(z),1))
+print(w)
+#Actividad 36:
+print("Actividad 36:")
+x = float(input("Introduce un valor:"))
+y = float(input("Introduce otro valor:"))
+if x%2==0 or y%2==0:
+    if x%2==0 and y%2==0:
+        z = list(range(int(x),int(y+1),2))
+        print(z)
+    elif x%2==0:
+        z = list(range(int(x),int(y),2))
+        print(z)
+    else:
+        z = list(range(int(x+1),int(y+1),2))
+        print(z)
+else:
+    z = list(range(int(x+1),int(y),2))
+    print(z)
+
+
 
 
 
