@@ -1,6 +1,7 @@
 import sys
 from math import pi,trunc
 import random
+import statistics
 #Actividad 1:
 print("Actividad 1:")
 print("La versión actual de python es:",sys.version)
@@ -473,12 +474,101 @@ print("Actividad 37:")
 x = float(input("Dime el valor inicial:"))
 y = float(input("Dime el valor final:"))
 z = float(input("De que valor quieres los múltiplos:"))
-w = list(range(int(x),int(y),int(z)))
-c = len(w)
-print(w)
-print("Entre",int(x),"y",int(y),"hay",c,"múltiplos de",int(z),".")
+c = x
+while True:
+    if x%z == 0:
+        w = list(range(int(x),int(y),int(z)))
+        c = len(w)
+        print(w)
+        print("Entre",int(c),"y",int(y),"hay",c,"múltiplos de",int(z),".")
+        break
+    elif x%z != 0:
+        if x>y:
+            print("ni",c,"ni ningún valor entre este y",y, "es múltiplo de",z)
+            break
+        else:
+            x+=1
 #Actividad 38:
 print("Actividad 38:")
+x = int(input("Escribe un numero:"))
+y = int(input("Escribe un numero mayor al anteriór:"))
+z = list(range(x,y + 1))
+w = 0
+c = []
+for i in z:
+    w += i
+    c.append(i)
+print("La suma de",c,"es",w)
+#Actividad 39:
+print("Actividad 39:")
+x = int(input("Introduce cuántos valores quieres escribir:"))
+c = 0
+for i in range(5):
+    y = int(input(f"Introduce el valor {i+1}:"))
+    c += y
+print("La suma es",c)
+#Actividad 40:
+print("Actividad 40:")
+x = int(input("Introduce la cantidad de valores que quieres escribir:"))
+c = 0
+for i in range(x):
+    y = int(input(f"Introduce el número {i+1}:"))
+    if y < 0:
+        c += 1
+    else:
+        c += 0
+print("Has escrito",c,"valores negativos:")
+#Actividad 41:
+print("Actividad 41:")
+x = int(input("Introduce la cantidad de valores que quieres escribir:"))
+c = 0
+w = []
+for i in range(x):
+    y = int(input(f"Introduce el número {i+1}:"))
+    w.append(y)
+wm1 = min(w)
+wm2 = max(w)
+wm3 = statistics.mean(w)
+print("El valro más pequeno es:",wm1)
+print("El valro más grande es:",wm2)
+print("La media de los numeros es:",wm3)
+#Actividad 42:
+print("Actividad 42:")
+x = int(input("Introduce la anchura del rectángulo: "))
+y = int(input("Introduce la altura del rectángulo: "))
+for i in range(y):
+    print("*"*x)
+#Actividad 43:
+print("Actividad 43:")
+x = int(input("Introduce la altura del rectángulo: "))
+for i in range(x+1):
+    print("*"*i)
+#Actividad 44:
+print("Actividad 44:")
+x = int(input("Introduce la altura del rectángulo: "))
+for i in range(x):
+    print("*"*i)
+#Actividad 45:
+print("Actividad 45:")
+x = int(input("Introduce la altura del rectángulo: "))
+for i in range(x):
+    print("*"*i)
+for i in range(x,0,-1):
+    print("*"*i)
+#Actividad 46:
+print("Actividad 46:")
+x = int(input("Introduce la altura del árbol: "))
+x = x*2
+y = x - 1
+for i in range(1,x,2):
+        y -= 1
+        print(" " * y,"*" * i)
+for i in range(x-6,x+5,2):
+        y -= 1
+        print(" " * (y+3),"*" * i)
+for i1 in range(2):
+        print(" "*(x-3),"|"*3)
+
 
 
 
