@@ -568,6 +568,12 @@ for i in range(x-6,x+5,2):
         print(" " * (y+3),"*" * i)
 for i1 in range(2):
         print(" "*(x-3),"|"*3)
+#Actividad 47:
+print("Actividad 47:")
+x = int(input("EScribe los valores sin la letra de un DNI:"))
+c = x%23
+y = ['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E']
+print("La letra de tu DNI es: ", y[c])
 
 
 
