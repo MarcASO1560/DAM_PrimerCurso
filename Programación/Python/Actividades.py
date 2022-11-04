@@ -574,6 +574,206 @@ x = int(input("EScribe los valores sin la letra de un DNI:"))
 c = x%23
 y = ['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E']
 print("La letra de tu DNI es: ", y[c])
+#Actividad 48:
+print("Actividad 48:")
+x = float(input("Introduce una cantidad de euros(sin el símbolo por favor xd):"))
+bill500 = 500
+bill200 = 200
+bill100 = 100
+bill50 = 50
+bill20 = 20
+bill10 = 10
+bill5 = 5
+mon2 = 2
+mon1 = 1
+mon05 = 0.50
+mon02 = 0.20
+mon01 = 0.10
+mon005 = 0.05
+mon002 = 0.02
+mon001 = 0.01
+y = []
+while True:
+	if bill500 <= x:
+		y.append(bill500)
+		x -= bill500
+	elif bill200 <= x:
+		y.append(bill200)
+		x -= bill200
+	elif bill100 <= x:
+		y.append(bill100)
+		x -= bill100
+	elif bill50 <= x:
+		y.append(bill50)
+		x -= bill50
+	elif bill20 <= x:
+		y.append(bill20)
+		x -= bill20
+	elif bill10 <= x:
+		y.append(bill10)
+		x -= bill10
+	elif bill5 <= x:
+		y.append(bill5)
+		x -= bill5
+	elif mon2 <= x:
+		y.append(mon2)
+		x -= mon2
+	elif mon1 <= x:
+		y.append(mon1)
+		x -= mon1
+	elif mon05 <= x:
+		y.append(mon05)
+		x -= mon05
+	elif mon02 <= x:
+		y.append(mon02)
+		x -= mon02
+	elif mon01 <= x:
+		y.append(mon01)
+		x -= mon01
+	elif mon005 <= x:
+		y.append(mon005)
+		x -= mon005
+	elif mon002 <= x:
+		y.append(mon002)
+		x -= mon002
+	elif mon001 <= x:
+		y.append(mon001)
+		x -= mon001
+	else:
+		break
+y500 = y.count(500)
+y200 = y.count(200)
+y100 = y.count(100)
+y50 = y.count(50)
+y20 = y.count(20)
+y10 = y.count(10)
+y5 = y.count(5)
+y2 = y.count(2)
+y1 = y.count(1)
+y05 = y.count(0.5)
+y02 = y.count(0.2)
+y01 = y.count(0.1)
+y005 = y.count(0.05)
+y002 = y.count(0.02)
+y001 = y.count(0.01)
+if y500 > 0:
+	if y500 == 1:
+		print(y500,"billete de 500€." )
+	else:
+		print(y500,"billetes de 500€.")
+if y200 > 0:
+	if y200 == 1:
+		print(y200,"billete de 200€." )
+	else:
+		print(y200,"billetes de 200€.")
+if y100 > 0:
+	if y100 == 1:
+		print(y100,"billete de 100€." )
+	else:
+		print(y100,"billetes de 100€.")
+if y50 > 0:
+	if y50 == 1:
+		print(y50,"billete de 50€." )
+	else:
+		print(y50,"billetes de 50€.")
+if y20 > 0:
+	if y20 == 1:
+		print(y20,"billete de 20€." )
+	else:
+		print(y20,"billetes de 20€.")
+if y10 > 0:
+	if y10 == 1:
+		print(y10,"billete de 10€." )
+	else:
+		print(y10,"billetes de 10€.")
+if y5 > 0:
+	if y5 == 1:
+		print(y5,"billete de 5€." )
+	else:
+		print(y200,"billetes de 5€.")
+if y2 > 0:
+	if y2 == 1:
+		print(y2,"moneda de 2€." )
+	else:
+		print(y2,"monedas de 2€.")
+if y1 > 0:
+	if y1 == 1:
+		print(y1,"moneda de 1€." )
+	else:
+		print(y1,"monedas de 1€.")
+if y05 > 0:
+	if y05 == 1:
+		print(y05,"moneda de 50 céntimos." )
+	else:
+		print(y05,"monedas de 50 céntimos.")
+if y02 > 0:
+	if y02 == 1:
+		print(y02,"moneda de 20 céntimos." )
+	else:
+		print(y02,"monedas de 20 céntimos.")
+if y01 > 0:
+	if y01 == 1:
+		print(y01,"moneda de 10 céntimos." )
+	else:
+		print(y01,"monedas de 10 céntimos.")
+if y005 > 0:
+	if y005 == 1:
+		print(y005,"moneda de 5 céntimos." )
+	else:
+		print(y005,"monedas de 5 céntimos.")
+if y002 > 0:
+	if y002 == 1:
+		print(y002,"moneda de 2 céntimos." )
+	else:
+		print(y002,"monedas de 2 céntimos.")
+if y001 > 0:
+	if y001 == 1:
+		print(y001,"moneda de 1 céntimo." )
+	else:
+		print(y001,"monedas de 1 céntimo.")
+#Actividad 49:
+print("Actividad 49:")
+a,e,i,o,u = "aA","eE","iI","oO","uU"
+chain = (input("Escribe un texto y te diré cuantas y cuáles vocales hay:"))
+ct,ca,ce,ci,co,cu = 0,0,0,0,0,0
+for y in chain:
+	if y in a:
+		ct += 1
+		ca += 1
+	if y in e:
+		ct += 1
+		ce += 1
+	if y in i:
+		ct += 1
+		ci += 1
+	if y in o:
+		ct += 1
+		co += 1
+	if y in u:
+		ct += 1
+		cu += 1
+print("Cantidad de (a,A):",ca)
+print("Cantidad de (e,E):",ce)
+print("Cantidad de (i,I):",ci)
+print("Cantidad de (o,O):",co)
+print("Cantidad de (u,U):",cu)
+print("Cantidad de vocales en total:",ct)
+#Actividad 50:
+print("Actividad 50:")
+v = "aáàAÁÀeéèEÉÈiíìïIÍÌÏoóòOÓÒuúùüUÚÙÜ"
+chain = (input("Escribe un texto y te borraré las vocales:"))
+for y in range(len(v)):
+		chain = chain.replace(v[y],"")
+print(chain)
+#Actividad 51:
+print("Actividad 51:")
+chain = (input("Escribe un texto y te contaré las palabras:"))
+x = chain.split()
+y = len(x)
+if y == 1:
+	print("Tu texto tiene",y,"palabra.")
+elif y > 1:
+	print("Tu texto tiene",y,"palabras.")
 
 
 
