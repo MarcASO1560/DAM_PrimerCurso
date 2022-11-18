@@ -2,32 +2,39 @@ import sys
 from math import pi,trunc
 import random
 import statistics
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 1:
 print("Actividad 1:")
 print("La versión actual de python es:",sys.version)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 2:
 print("Actividad 2:")
 print(
 "\nTwinkle, twinkle, little star,\t", "\n\tHow I wonder what you are!", "\n\t\tUp above the world so high", "\n\t\tLike a diamond in the sky.","\nTwinkle, twinkle, little star,\t","\n\tHow I wonder what you are"
 )
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 3:
 print("Actividad 3:")
 x=input("Insterta tu nombre:")
 print("Tu nombre es:",x)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 4:
 print("Actividad 4:")
 n=input("Cual es su edad:")
 print("El número elegido es:", int(n))
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 5:
 print("Actividad 5:")
 r=float(input("Radio de la circumferencia:"))
 A = pi * r * r
 print("La area del circulo equivale a:",A)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 6:
 print("Actividad 6:")
 lname = input("Introduzca sus apellidos:")
 fname = input("Introduzca su nombre:")
 print("Su nombre completo es:",fname + " " + lname)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 7:
 print("Actividad 7:")
 N1 = int(input("Primera nota:"))
@@ -36,11 +43,13 @@ N3 = int(input("Tercera nota:"))
 N4 = int(input("Cuarta nota:"))
 Ntotal = (N1 + N2 + N3 + N4) / 4
 print("El promedio es:",Ntotal)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 8:
 print("Actividad 8:")
 Texto = input("Escribe un texto:")
 numT = len(Texto)
 print("El texto que has escrita contiene",numT, "carácteres.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 9:
 print("Actividad 9:")
 c1 = int(input("Primera nota:"))
@@ -50,6 +59,7 @@ nf = 60
 c3 = (3*(nf-nl*0.3)/0.7)-c2-c1
 nc = (c1+c2+c3)/3
 print("Necesitas una nota de",round(c3),"en el examen 3")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 10:
 print("Actividad 10:")
 pc = float(input("Introduce tu peso corporal (Kg):"))
@@ -72,6 +82,7 @@ elif imc > 35.00 and imc <= 40.00:
     print("Si eres capaz de mantenerte en pié, te aplaudo.")
 elif imc >= 40.00:
     print("Trata de rodar como en Dark Souls.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 11:
 print("Actividad 11:")
 salbr = float(input("Introduzca su salario en bruto (€):"))
@@ -86,6 +97,7 @@ elif salbr >= 2000.00 and salbr < 4000.00:
     print("Tu impuesto será del 10% por lo tanto su salario neto será de",round(ts2,2),"€")
 elif salbr >= 4000.00:
     print("Tu impuesto será del 12% por lo tanto su salario neto será de",round(ts3,2),"€")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 12:
 print("Actividad 12:")
 x = int(input("Introduzca un numero:"))
@@ -95,6 +107,7 @@ elif x > 10:
     print("El numero",x,"es mayor que 10.")
 else:
     print("El numero",x,"es igual que 10.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 13:
 print("Actividad 13:")
 x = int(input("Introduzca un numero:"))
@@ -103,6 +116,7 @@ if n == 0:
     print("El numero",x,"es par.")
 else:
     print("El numero",x,"es impar.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 14:
 print("Actividad 14:")
 x = 0
@@ -111,6 +125,7 @@ w = 1
 while x <= y:
     print(x)
     x += w
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 15:
 print("Actividad 15:")
 pa = int(input("Introduzca el primer año:"))
@@ -124,6 +139,7 @@ elif pa > sa:
     print("Del año",sa,"hasta el año",pa,"pasaran",x,"años.")
 else:
     print("Los dos años son iguales...")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 16:
 print("Actividad 16:")
 x = int(input("Introduzca un numero:"))
@@ -144,6 +160,7 @@ elif x < y:
         print("La división es exacta, el resultado entre",y,"y",x,"es",round(div),"y el resto es",res,".")
     else:
         print("La división no es exacta, el resultado entre",y,"y",x,"es",round(div),"y el resto es",res,".")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Activitat 17:
 print("Activitat 17:")
 x = int(input("Introduzca un numero:"))
@@ -154,6 +171,7 @@ elif x < y:
     print("Menor:",y,">","Mayor:",x)
 elif x == y:
     print(x,"=",y)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 18:
 print("Actividad 18:")
 x = int(input("Introduzca un numero:"))
@@ -206,6 +224,7 @@ else:
         else:
             print(float(div))
             print(y,"no és múltiple de",x)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 19:
 print("Actividad 19:")
 x = int(input("Introduzca el primer número:"))
@@ -221,6 +240,7 @@ elif y == w:
     print(y,"y",w,"son iguales.")
 else:
     print("Los 3 números son distintos.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 20:
 print("Actividad 20:")
 x = int(input("Introduce un año y te diré si es biciesto o no:"))
@@ -229,6 +249,7 @@ if calc == 0:
     print("El año",x,"es un número biciesto porque es multiple de 4.")
 else:
     print("El año",x,"no es un número biciesto.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 21:
 print("Actividad 21:")
 x = input(
@@ -247,6 +268,7 @@ elif x == "T":
     alt =  float(input("Introduce la altura del triangulo:"))
     a = (b * alt) / 2
     print("La area del triangulo es:",float(a,2))
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 22:
 print("Actividad 22:")
 cm = float(input("Introduce la cantidad de centímetros:"))
@@ -261,6 +283,7 @@ elif cm >= 100000:
     m1 = (km - trunc(km))*1000
     cm2 = (m1 - trunc(m1))*100
     print("Tu distancia es",trunc(km),"kilómetros",round(m1),"metros y",round(cm2),"centímetros.")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 23:
 print("Actividad 23:")
 x = float(input("Escribe un número, cuando escribas el número 0, saldrá del bucle:"))
@@ -272,6 +295,7 @@ while x != 0:
         break
     else:
         y.append(x)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 24:
 print("Activiad 24:")
 x = float(input("Escribe una nota entre 0 y 10:"))
@@ -283,6 +307,7 @@ while x >= 0 or x <= 10:
         break
     else:
         y.append(x)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 25:
 print("Actividad 25:")
 x1 = float(input("Introduce un número:"))
@@ -295,6 +320,7 @@ while x1 >= x2:
         print("Los números escritos son:",y)
     else:
         y.append(x1)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 26:
 print("Actividad 26:")
 while True:
@@ -313,6 +339,7 @@ while True:
                 break
         print("Los números situados entre",min,"y",max,"son:",y)
         break
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 27:
 print("Actividad 27:")
 lim = float(input("Introduce un número límite:"))
@@ -328,6 +355,7 @@ while True:
             y.append(x)
             z += x
     break
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 28:
 print("Actividad 28:")
 while True:
@@ -355,6 +383,7 @@ while True:
                     print("¡Acertaste! Te ha costado",c,"intentos.")
                     break
         break
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 29:
 print("Actividad 29:")
 x = list(range(0,10))
@@ -379,6 +408,7 @@ x = list(range(17,0,-2))
 print(x)
 x = list(range(1000,99,-100))
 print(x)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 30:
 print("Actividad 30:")
 while True:
@@ -397,6 +427,7 @@ while True:
         y = list(range(0,int(x + 1),1)) + list(range(int(x - 1),-1,-1))
         print(y)
         break
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 31:
 print("Actividad 31:")
 x = float(input("Introduce un número:"))
@@ -406,6 +437,7 @@ if x > 0:
 elif x < 0:
     y = list(range(0,int(x-1),-1))
     print("El resultado es:",y)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 32:
 print("Actividad 32:")
 while True:
@@ -425,6 +457,7 @@ while True:
         y = list(range(int(min),int(max + 1),1)) + list(range(int(max - 1),int(min - 1),-1))
         print(y)
         break
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 33:
 print("Actividad 33:")
 x = float(input("Escribe un número inicial:"))
@@ -435,6 +468,7 @@ if x > y:
 if x < y:
     w = list(range(int(x),int(y),1))
     print(w)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 34:
 print("Actividad 34:")
 x = float(input("Escribe un número inicial:"))
@@ -445,6 +479,7 @@ if x > y:
 if x < y:
     w = list(range(int(x + 1),int(y),1))
     print(w)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 35:
 print("Actividad 35:")
 x = float(input("Introduce un valor inicial:"))
@@ -452,6 +487,7 @@ y = float(input("Introduce cuantos valores quieres:"))
 z = x + y
 w = list(range(int(x),int(z),1))
 print(w)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 36:
 print("Actividad 36:")
 x = float(input("Introduce un valor:"))
@@ -469,6 +505,7 @@ if x%2==0 or y%2==0:
 else:
     z = list(range(int(x+1),int(y),2))
     print(z)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 37:
 print("Actividad 37:")
 x = float(input("Dime el valor inicial:"))
@@ -488,6 +525,7 @@ while True:
             break
         else:
             x+=1
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 38:
 print("Actividad 38:")
 x = int(input("Escribe un numero:"))
@@ -499,6 +537,7 @@ for i in z:
     w += i
     c.append(i)
 print("La suma de",c,"es",w)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 39:
 print("Actividad 39:")
 x = int(input("Introduce cuántos valores quieres escribir:"))
@@ -507,6 +546,7 @@ for i in range(5):
     y = int(input(f"Introduce el valor {i+1}:"))
     c += y
 print("La suma es",c)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 40:
 print("Actividad 40:")
 x = int(input("Introduce la cantidad de valores que quieres escribir:"))
@@ -518,6 +558,7 @@ for i in range(x):
     else:
         c += 0
 print("Has escrito",c,"valores negativos:")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 41:
 print("Actividad 41:")
 x = int(input("Introduce la cantidad de valores que quieres escribir:"))
@@ -532,22 +573,26 @@ wm3 = statistics.mean(w)
 print("El valro más pequeno es:",wm1)
 print("El valro más grande es:",wm2)
 print("La media de los numeros es:",wm3)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 42:
 print("Actividad 42:")
 x = int(input("Introduce la anchura del rectángulo: "))
 y = int(input("Introduce la altura del rectángulo: "))
 for i in range(y):
     print("*"*x)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 43:
 print("Actividad 43:")
 x = int(input("Introduce la altura del rectángulo: "))
 for i in range(x+1):
     print("*"*i)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 44:
 print("Actividad 44:")
 x = int(input("Introduce la altura del rectángulo: "))
 for i in range(x):
     print("*"*i)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 45:
 print("Actividad 45:")
 x = int(input("Introduce la altura del rectángulo: "))
@@ -555,6 +600,7 @@ for i in range(x):
     print("*"*i)
 for i in range(x,0,-1):
     print("*"*i)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 46:
 print("Actividad 46:")
 x = int(input("Introduce la altura del árbol: "))
@@ -568,169 +614,40 @@ for i in range(x-6,x+5,2):
         print(" " * (y+3),"*" * i)
 for i1 in range(2):
         print(" "*(x-3),"|"*3)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 47:
 print("Actividad 47:")
 x = int(input("EScribe los valores sin la letra de un DNI:"))
 c = x%23
 y = ['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E']
 print("La letra de tu DNI es: ", y[c])
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 48:
 print("Actividad 48:")
 x = float(input("Introduce una cantidad de euros(sin el símbolo por favor xd):"))
-bill500 = 500
-bill200 = 200
-bill100 = 100
-bill50 = 50
-bill20 = 20
-bill10 = 10
-bill5 = 5
-mon2 = 2
-mon1 = 1
-mon05 = 0.50
-mon02 = 0.20
-mon01 = 0.10
-mon005 = 0.05
-mon002 = 0.02
-mon001 = 0.01
+d = [500,200,100,50,20,10,5,2,1,0.5,0.2,0.1,0.05,0.02,0.01]
 y = []
-while True:
-	if bill500 <= x:
-		y.append(bill500)
-		x -= bill500
-	elif bill200 <= x:
-		y.append(bill200)
-		x -= bill200
-	elif bill100 <= x:
-		y.append(bill100)
-		x -= bill100
-	elif bill50 <= x:
-		y.append(bill50)
-		x -= bill50
-	elif bill20 <= x:
-		y.append(bill20)
-		x -= bill20
-	elif bill10 <= x:
-		y.append(bill10)
-		x -= bill10
-	elif bill5 <= x:
-		y.append(bill5)
-		x -= bill5
-	elif mon2 <= x:
-		y.append(mon2)
-		x -= mon2
-	elif mon1 <= x:
-		y.append(mon1)
-		x -= mon1
-	elif mon05 <= x:
-		y.append(mon05)
-		x -= mon05
-	elif mon02 <= x:
-		y.append(mon02)
-		x -= mon02
-	elif mon01 <= x:
-		y.append(mon01)
-		x -= mon01
-	elif mon005 <= x:
-		y.append(mon005)
-		x -= mon005
-	elif mon002 <= x:
-		y.append(mon002)
-		x -= mon002
-	elif mon001 <= x:
-		y.append(mon001)
-		x -= mon001
-	else:
-		break
-y500 = y.count(500)
-y200 = y.count(200)
-y100 = y.count(100)
-y50 = y.count(50)
-y20 = y.count(20)
-y10 = y.count(10)
-y5 = y.count(5)
-y2 = y.count(2)
-y1 = y.count(1)
-y05 = y.count(0.5)
-y02 = y.count(0.2)
-y01 = y.count(0.1)
-y005 = y.count(0.05)
-y002 = y.count(0.02)
-y001 = y.count(0.01)
-if y500 > 0:
-	if y500 == 1:
-		print(y500,"billete de 500€." )
-	else:
-		print(y500,"billetes de 500€.")
-if y200 > 0:
-	if y200 == 1:
-		print(y200,"billete de 200€." )
-	else:
-		print(y200,"billetes de 200€.")
-if y100 > 0:
-	if y100 == 1:
-		print(y100,"billete de 100€." )
-	else:
-		print(y100,"billetes de 100€.")
-if y50 > 0:
-	if y50 == 1:
-		print(y50,"billete de 50€." )
-	else:
-		print(y50,"billetes de 50€.")
-if y20 > 0:
-	if y20 == 1:
-		print(y20,"billete de 20€." )
-	else:
-		print(y20,"billetes de 20€.")
-if y10 > 0:
-	if y10 == 1:
-		print(y10,"billete de 10€." )
-	else:
-		print(y10,"billetes de 10€.")
-if y5 > 0:
-	if y5 == 1:
-		print(y5,"billete de 5€." )
-	else:
-		print(y200,"billetes de 5€.")
-if y2 > 0:
-	if y2 == 1:
-		print(y2,"moneda de 2€." )
-	else:
-		print(y2,"monedas de 2€.")
-if y1 > 0:
-	if y1 == 1:
-		print(y1,"moneda de 1€." )
-	else:
-		print(y1,"monedas de 1€.")
-if y05 > 0:
-	if y05 == 1:
-		print(y05,"moneda de 50 céntimos." )
-	else:
-		print(y05,"monedas de 50 céntimos.")
-if y02 > 0:
-	if y02 == 1:
-		print(y02,"moneda de 20 céntimos." )
-	else:
-		print(y02,"monedas de 20 céntimos.")
-if y01 > 0:
-	if y01 == 1:
-		print(y01,"moneda de 10 céntimos." )
-	else:
-		print(y01,"monedas de 10 céntimos.")
-if y005 > 0:
-	if y005 == 1:
-		print(y005,"moneda de 5 céntimos." )
-	else:
-		print(y005,"monedas de 5 céntimos.")
-if y002 > 0:
-	if y002 == 1:
-		print(y002,"moneda de 2 céntimos." )
-	else:
-		print(y002,"monedas de 2 céntimos.")
-if y001 > 0:
-	if y001 == 1:
-		print(y001,"moneda de 1 céntimo." )
-	else:
-		print(y001,"monedas de 1 céntimo.")
+for i in d:
+	while True:
+		if i <= x:
+			y.append(i)
+			x -= i
+		else:
+			break
+for u in d:
+	yc = y.count(u)
+	if yc != 0:
+		if u >= 5:
+			if yc == 1:
+				print(yc,"billete de",u,"€")
+			else:
+				print(yc,"billetes de",u,"€")
+		else:
+			if yc == 1:
+				print(yc,"moneda de",u,"€")
+			else:
+				print(yc,"monedas de",u,"€")
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 49:
 print("Actividad 49:")
 a,e,i,o,u = "aA","eE","iI","oO","uU"
@@ -758,6 +675,7 @@ print("Cantidad de (i,I):",ci)
 print("Cantidad de (o,O):",co)
 print("Cantidad de (u,U):",cu)
 print("Cantidad de vocales en total:",ct)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 50:
 print("Actividad 50:")
 v = "aáàAÁÀeéèEÉÈiíìïIÍÌÏoóòOÓÒuúùüUÚÙÜ"
@@ -765,13 +683,14 @@ chain = (input("Escribe un texto y te borraré las vocales:"))
 for y in range(len(v)):
 		chain = chain.replace(v[y],"")
 print(chain)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 51:
 print("Actividad 51:")
 chain = (input("Escribe un texto y te contaré las palabras:"))
 x = chain.split()
 y = len(x)
 if y == 1:
-	print("Tu texto tiene",y,"palabra.")
+	print("Tu texto tiene 1 palabra.")
 elif y > 1:
 	print("Tu texto tiene",y,"palabras.")
 
