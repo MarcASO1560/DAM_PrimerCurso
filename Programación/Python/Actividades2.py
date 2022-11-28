@@ -217,3 +217,80 @@ def contar_largo_palabras(x):
     print(d)
 x = input("Escribe una oración: ")
 contar_largo_palabras(x)
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 63.
+os.system ("clear")
+print("Actividad 63")
+def mas_larga(x):
+    pm = len(x[0])
+    ps = x[0]
+    for y in x:
+        if pm <= len(y):
+            ps = y
+            pm = len(y)
+        else:
+            ps = ps
+    print(ps)
+x = []
+while True:
+    escr = input("""Escribe una palabra 
+                 (cuando escribas 0, dejarás
+                 de escribir palabras y te 
+                 daré el resultado): """)
+    if escr != "0":
+        x.append(escr)
+    else:
+        break
+mas_larga(x)
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 64.
+os.system ("clear")
+print("Actividad 64")
+def filtrar_palabras(x,y):
+    z = []
+    for w in x:
+        if len(w) >= y:
+            z.append(w)
+    if len(z) == 0:
+        print("No hay palabras...")
+    else: 
+        print(z)
+x = []
+while True:
+    escr = input("""Escribe una palabra 
+                 (cuando escribas 0, dejarás
+                 de escribir palabras y te 
+                 daré el resultado): """)
+    if escr != "0":
+        x.append(escr)
+    else:
+        y = int(input("Dime un número:"))
+        break
+filtrar_palabras(x,y)
+#Actividad 65.
+os.system ("clear")
+print("Actividad 65")
+x = input("Escribe una oración:")
+c = 0
+for i in list(x):
+    if i.isupper() == True:
+        c += 1
+    else:
+        c += 0
+print("En tu oración hay",c,"mayusculas.")
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 66.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 67.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 68.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 69.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 70.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 71.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 72.
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 73.
