@@ -267,6 +267,7 @@ while True:
         y = int(input("Dime un número:"))
         break
 filtrar_palabras(x,y)
+#----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 65.
 os.system ("clear")
 print("Actividad 65")
@@ -280,6 +281,22 @@ for i in list(x):
 print("En tu oración hay",c,"mayusculas.")
 #----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 66.
+os.system ("clear")
+print("Actividad 66")
+def bin_dec(x):
+    bd = int(str(x), 2)
+    print("El numero que has escrito es: ",bd)
+x = int(input("Escribe un número binario:"))
+bin_dec(x)
+#----------------------------------------------------------------------------------------------------------------------------------
+#Actividad 67.
+os.system ("clear")
+print("Actividad 67:")
+x = int(input("Escribe el año actual: "))
+y = []
+for xd in [0,3]:
+    z = int(input(f"Escribe el nombre {xd} : "))
+    y.append(z)
 #----------------------------------------------------------------------------------------------------------------------------------
 #Actividad 67.
 #----------------------------------------------------------------------------------------------------------------------------------
