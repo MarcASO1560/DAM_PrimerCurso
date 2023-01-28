@@ -29,7 +29,7 @@ public class Main {
                     break;
                 case "a":
                     ProcessBuilder pb = new ProcessBuilder();
-                    pb.command("/bin/bash","-c",new File(".").getCanonicalPath() + "/src/script.sh");
+                    pb.command("sh","-c",new File(".").getCanonicalPath() + "/src/script.sh");
                     Process process = pb.start();
                     String result = read(process);
                     System.out.println("Comando: " + result);
