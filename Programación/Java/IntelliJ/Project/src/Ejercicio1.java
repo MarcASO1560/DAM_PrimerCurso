@@ -1,5 +1,5 @@
 import java.io.*;
-import java.utils;
+import java.util.*;
 public class Ejercicio1 {
     public static void ej1() throws IOException, InterruptedException{
         boolean condition = true;

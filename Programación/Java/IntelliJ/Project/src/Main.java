@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException{
         boolean condition = true;
         while (condition == true){
-            new ProcessBuilder("clear").inheritIO().start().waitFor();
+            //new ProcessBuilder("clear").inheritIO().start().waitFor();
             System.out.println("=================================");
             System.out.println("|              MENU             |");
             System.out.println("=================================");
@@ -12,7 +12,7 @@ public class Main {
             System.out.println("|        1. Actividad 1         |");
             System.out.println("|        2. Actividad 2         |");
             System.out.println("|        a. Actualizar          |");
-            System.out.println("|        x. Salir jajajajaja              |");
+            System.out.println("|        x. Salir               |");
             System.out.println("=================================");
             System.out.println(" ");
             System.out.println("Escoje una opción: ");
@@ -28,7 +28,11 @@ public class Main {
                     obj2.ej2();
                     break;
                 case "a":
-                    Runtime.getRuntime().exec("sh script.sh");
+                    ProcessBuilder pb = new ProcessBuilder();
+                    pb.command("/bin/bash","-c",new File(".").getCanonicalPath() + "/src/script.sh");
+                    Process process = pb.start();
+                    String result = read(process);
+                    System.out.println("Comando: " + result);
                     break;
 
                 case "x":
@@ -43,10 +47,26 @@ public class Main {
                             break;
                         } else{
                             System.out.println("No se ha entendido...");
+                            break;
                         }
-                }
-        }
+                    }
+            }
 
-         }
+        }
+    }
+    private static String read(Process process){
+        try{
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            StringBuilder builder = new StringBuilder();
+            String line = null;
+            while ((line = reader.readLine()) != null){
+                builder.append(line);
+                builder.append(System.getProperty("line.separator"));
+            }
+            String result = builder.toString();
+            return result;
+        } catch (Exception e){
+            throw new RuntimeException(e);
+        }
     }
 }
