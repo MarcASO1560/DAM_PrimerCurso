@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException{
         boolean condition = true;
         while (condition == true){
-            //new ProcessBuilder("clear").inheritIO().start().waitFor();
+            new ProcessBuilder("clear").inheritIO().start().waitFor();
             System.out.println("=================================");
             System.out.println("|              MENU             |");
             System.out.println("=================================");
