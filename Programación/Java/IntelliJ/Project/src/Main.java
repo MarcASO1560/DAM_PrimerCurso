@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException{
         boolean condition = true;
@@ -28,12 +28,12 @@ public class Main {
                     obj2.ej2();
                     break;
                 case "a":
-                    condition = false;
+                    System.out.println("Cargando...");
                     ProcessBuilder pb = new ProcessBuilder();
                     pb.command("sh",new File(".").getCanonicalPath() + "/script.sh");
                     Process process = pb.start();
                     String result = read(process);
-                    System.out.println("Comando: " + result);
+                    condition = false;
                 case "x":
                     new ProcessBuilder("clear").inheritIO().start().waitFor();
                     while (condition == true){

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<MilitarVehicles>
+	<JetFighters generation="1">
+		<NationalOrigin>United Kingdom</NationalOrigin>
+		<Name>Gloster Meteor</Name>
+		<Produced>1943-1955</Produced>
+		<State>Two in service</State>
+	</JetFighters>
+        <JetFighters generation="2">
+                <NationalOrigin>Soviet Union</NationalOrigin>
+                <Name>MiG-21</Name>
+                <Produced>1959-1985</Produced>
+                <State>In service</State>
+        </JetFighters>
+        <JetFighters generation="3">
+                <NationalOrigin>France/United Kingdom</NationalOrigin>
+                <Name>SEPECAT Jaguar</Name>
+                <Produced>1968-1981</Produced>
+                <State>In service with Indian Air Force</State>
+        </JetFighters>
+        <JetFighters generation="4">
+                <NationalOrigin>United States</NationalOrigin>
+                <Name>F-15 Eagle</Name>
+                <Produced>1972-present</Produced>
+                <State>In service</State>
+        </JetFighters>
+        <JetFighters generation="5">
+                <NationalOrigin>China</NationalOrigin>
+                <Name>Chengdu J-20 Mighty Dragon</Name>
+                <Produced>2009-present</Produced>
+                <State>In service</State>
+        </JetFighters>
+</MilitarVehicles>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<MilitarVheicles>
+	<JetFighters generation="1">
+		<Country>United Kingdom</Country>
+		<Name>Gloster Meteor</Name>
+		<Color>White</Color>
+		<State>Under development</State>
+	</LaunchVehicles>
+        <LaunchVehicles phase="2">
+                <Country>European Union</Country>
+                <Name>Ariane 5</Name>
+                <Manufacturer>ArianeGroup</Manufacturer>
+                <Color>White</Color>
+                <State>Operational</State>
+        </LaunchVehicles>
+</MilitarVehicles>
