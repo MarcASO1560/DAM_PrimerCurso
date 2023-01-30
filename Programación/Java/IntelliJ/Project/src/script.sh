@@ -1,6 +1,2 @@
-#!/bin/bash
+bash update.sh
 
-echo Hello world!
-
-kill -9 888
-java Main

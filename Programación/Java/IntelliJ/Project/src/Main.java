@@ -28,13 +28,12 @@ public class Main {
                     obj2.ej2();
                     break;
                 case "a":
+                    condition = false;
                     ProcessBuilder pb = new ProcessBuilder();
-                    pb.command("sh","-c",new File(".").getCanonicalPath() + "/src/script.sh");
+                    pb.command("sh",new File(".").getCanonicalPath() + "/script.sh");
                     Process process = pb.start();
                     String result = read(process);
                     System.out.println("Comando: " + result);
-                    break;
-
                 case "x":
                     new ProcessBuilder("clear").inheritIO().start().waitFor();
                     while (condition == true){
@@ -42,6 +41,7 @@ public class Main {
                         Scanner y = new Scanner(System.in);
                         String adv = y.nextLine();
                         if (adv.equals("s") || adv.equals("S")){
+                            new ProcessBuilder("clear").inheritIO().start().waitFor();
                             condition = false;
                         } else if (adv.equals("n") || adv.equals("N")){
                             break;
@@ -51,7 +51,6 @@ public class Main {
                         }
                     }
             }
-
         }
     }
     private static String read(Process process){
