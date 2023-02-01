@@ -1,4 +1,3 @@
-echo Hello world!
+echo Cargando script.hs...
+exec sh update.sh
 
-javac Main.java
-java Main

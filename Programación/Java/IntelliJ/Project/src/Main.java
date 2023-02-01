@@ -3,17 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException{
         boolean condition = true;
+        new ProcessBuilder("clear").inheritIO().start().waitFor();
         while (condition == true){
-            new ProcessBuilder("clear").inheritIO().start().waitFor();
-            System.out.println("=================================");
-            System.out.println("|              MENU             |");
-            System.out.println("=================================");
-            System.out.println("| Opciones:                     |");
-            System.out.println("|        1. Actividad 1         |");
-            System.out.println("|        2. Actividad 2         |");
-            System.out.println("|        a. Actualizar          |");
-            System.out.println("|        x. Salir               |");
-            System.out.println("=================================");
+            System.out.println("=========================================");
+            System.out.println("|                  MENU                 |");
+            System.out.println("=========================================");
+            System.out.println("| Opciones:                             |");
+            System.out.println("|        1. Actividad 1                 |");
+            System.out.println("|        2. Actividad 2                 |");
+            System.out.println("|        3. Actividad 3                 |");
+            System.out.println("|        a. Actualizar (no funciona)    |");
+            System.out.println("|        x. Salir                       |");
+            System.out.println("=========================================");
             System.out.println(" ");
             System.out.println("Escoje una opción: ");
             Scanner x = new Scanner(System.in);
@@ -27,13 +28,17 @@ public class Main {
                     Ejercicio2 obj2 = new Ejercicio2();
                     obj2.ej2();
                     break;
+                case "3":
+                    Ejercicio3 obj3 = new Ejercicio3();
+                    obj3.ej3();
+                    break;
                 case "a":
                     System.out.println("Cargando...");
                     ProcessBuilder pb = new ProcessBuilder();
                     pb.command("sh",new File(".").getCanonicalPath() + "/script.sh");
                     Process process = pb.start();
                     String result = read(process);
-                    condition = false;
+                    System.exit(1);
                 case "x":
                     new ProcessBuilder("clear").inheritIO().start().waitFor();
                     while (condition == true){

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<Directori>
+	<Entrades>
+		<Cognom>Sanchez</Cognom>
+		<Nom>Carlos</Nom>
+		<Data_Naixement>10-02-1999</Data_Naixement>
+		<Direcció>Calle la Vida n.69 piso:1</Direcció>
+	</Entrades>
+	<Entrades>
+                <Cognom>Kehinde</Cognom>
+                <Nom>Isaac</Nom>
+                <Data_Naixement>24-07-2003</Data_Naixement>
+                <Direcció>Calle la Vida n.69 piso:2</Direcció>
+        </Entrades>
+        <Entrades>
+                <Cognom>Tous</Cognom>
+                <Nom>David</Nom>
+                <Data_Naixement>27-07-2004</Data_Naixement>
+                <Direcció>Calle la Vida n.69 piso:3</Direcció>
+        </Entrades>
+</Directori

@@ -5,6 +5,10 @@ public class Ejercicio1 {
         boolean condition = true;
         new ProcessBuilder("clear").inheritIO().start().waitFor();
         while (condition==true){
+            System.out.println("Actividad 1:");
+            System.out.println("Este ejercicio es un juego de adivinar una palabra secreta,");
+            System.out.println("al escribir esta, tienes 3 intentos para adivinarla, si no");
+            System.out.println("lo consigues, pierdes.");
             System.out.println("Quieres empezar el juego? [s/n]");
             Scanner x = new Scanner(System.in);
             String palabra = x.nextLine();
@@ -13,8 +17,7 @@ public class Ejercicio1 {
                 while (condition==true){
                     System.out.println("Empieza el juego:");
                     System.out.println("Escribe una palabra secreta:");
-                    Scanner y = new Scanner(System.in);
-                    String secreto = y.nextLine();
+                    String secreto = x.nextLine();
                     while (condition==true){
                         new ProcessBuilder("clear").inheritIO().start().waitFor();
                         if (cc > 1) {
@@ -22,18 +25,29 @@ public class Ejercicio1 {
                         } else {
                             System.out.println("Adivina la palabra, tienes " + cc + " intento: ");
                         }
-                        Scanner z = new Scanner(System.in);
-                        String intento = z.nextLine();
+                        String intento = x.nextLine();
                         if (intento.equals(secreto)){
                             new ProcessBuilder("clear").inheritIO().start().waitFor();
                             System.out.println("Has ganado el juego!!!");
-                            break;
+                            System.out.println("Quieres volver a jugar? [s/n]");
+                            String adv2 = x.nextLine();
+                            if (adv2.equals("s") || adv2.equals("S")){
+                                new ProcessBuilder("clear").inheritIO().start().waitFor();
+                            } else if (adv2.equals("n") || adv2.equals("N")){
+                                condition = false;
+                            }
                         } else {
                             cc--;
                         } if (cc == 0){
                             new ProcessBuilder("clear").inheritIO().start().waitFor();
                             System.out.println("Has perdido el juego... La palabra secreta era: " + secreto);
-                            break;
+                            System.out.println("Quieres volver a jugar? [s/n]");
+                            String adv2 = x.nextLine();
+                            if (adv2.equals("s") || adv2.equals("S")){
+                                new ProcessBuilder("clear").inheritIO().start().waitFor();
+                            } else if (adv2.equals("n") || adv2.equals("N")){
+                                condition = false;
+                            }
                         }
                     }
                     break;
