@@ -12,6 +12,7 @@ public class Main {
             System.out.println("|        1. Actividad 1                 |");
             System.out.println("|        2. Actividad 2                 |");
             System.out.println("|        3. Actividad 3                 |");
+            System.out.println("|        4. Actividad 4                 |");
             System.out.println("|        a. Actualizar (no funciona)    |");
             System.out.println("|        x. Salir                       |");
             System.out.println("=========================================");
@@ -31,6 +32,10 @@ public class Main {
                 case "3":
                     Ejercicio3 obj3 = new Ejercicio3();
                     obj3.ej3();
+                    break;
+                case "4":
+                    Ejercicio4 obj4 = new Ejercicio4();
+                    obj4.ej4();
                     break;
                 case "a":
                     System.out.println("Cargando...");

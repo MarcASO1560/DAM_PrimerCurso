@@ -6,30 +6,23 @@ public class Ejercicio3 {
         Scanner x = new Scanner(System.in);
         ProcessBuilder pb = new ProcessBuilder();
         pb.command("clear").inheritIO().start().waitFor();
-        while (hahaha){
-            System.out.println("Actividad 3:");
-            System.out.println("Esta actividad pide una palabra que el programa devolverá");
-            System.out.println("añadiendo la misma palabra pero invertida y pegada a la derecha");
-            System.out.println("de la primera palabra escrita.");
+        System.out.println("Actividad 3:");
+        System.out.println("Esta actividad pide una palabra que el programa devolverá");
+        System.out.println("añadiendo la misma palabra pero invertida y pegada a la derecha");
+        System.out.println("de la primera palabra escrita.");
+        while (hahaha == true){
             System.out.println("Quieres iniciar la actividad? [s/n]: ");
             String adv = x.next();
             if (adv.equals("s") || adv.equals("S")){
-                while (hahaha){
-                    pb.command("clear").inheritIO().start().waitFor();
+                while (hahaha == true) {
                     System.out.print("Escribe una palabra: ");
                     String palabra = x.next();
                     String result = convert(palabra);
                     System.out.println(result);
-                    System.out.println("Quieres jugar de nuevo? [s/n]");
-                    String adv2 = x.nextLine();
-                    if (adv2.equals("s") || adv2.equals("S")){
-                        pb.command("clear").inheritIO().start().waitFor();
-                    } else if (adv2.equals("n") || adv2.equals("N")){
-                        hahaha = false;
-                    }
+                    break;
                 }
             } else if (adv.equals("n") || adv.equals("N")){
-                break;
+                hahaha = false;
             }
         }
     }
